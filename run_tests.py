@@ -971,7 +971,10 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     #args.restrict_to_program = ["C ConcreteServer"]
-
+    try:
+        os.mkdir(os.path.join(BASE_DIR, "results/"))
+    except FileExistsError as e:
+        pass
     run_tests(args.restrict_to_path, args.restrict_to_program)
 
     generate_report(os.path.join(BASE_DIR, "results/parsing.html"), keep_only_first_result_in_set = False)
