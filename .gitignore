@@ -1,1 +1,3 @@
-results/
+results/logs.txt
+results/*.html
+results/*.png
