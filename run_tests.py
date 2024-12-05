@@ -41,12 +41,6 @@ programs = {
     #         "url":"https://github.com/step-/JSON.awk",
     #         "commands":["/usr/bin/mawk", "-f", os.path.join(PARSERS_DIR, "test_JSON.awk", "callbacks.awk"), "-f", os.path.join(PARSERS_DIR, "test_JSON.awk", "JSON.awk")]
     #     },
-    "Bash JSON.sh 2016-08-12":
-        {
-            "url":"https://github.com/dominictarr/JSON.sh",
-            "commands":[os.path.join(PARSERS_DIR, "test_Bash_JSON/JSON.sh")],
-            "use_stdin":True
-        },
     "R rjson":
         {
             "url":"",
@@ -86,11 +80,6 @@ programs = {
        {
            "url":"https://github.com/stig/json-framework",
            "commands":[os.path.join(PARSERS_DIR, "test_SBJson_5_0_0/bin/test_sbjson")]
-       },
-   "Go 1.7.1":
-       {
-           "url":"",
-           "commands":[os.path.join(PARSERS_DIR, "test_go/test_json")]
        },
     "Zig 0.8.0-dev.1354+081698156":
        {
@@ -387,11 +376,6 @@ programs = {
            "url":"",
            "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_java_gson_2_7/TestJSONParsing.jar")]
        },
-   "Java BFO v1":
-       {
-           "url":"https://github.com/faceless2/json",
-           "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_java_bfo/TestJSONParsing.jar")]
-       },
    "Java com.leastfixedpoint.json 1.0":
        {
            "url":"",
@@ -521,6 +505,22 @@ programs = {
        }
 }
 programs = {
+    "Bash JSON.sh 2016-08-12":
+        {
+            "url":"https://github.com/dominictarr/JSON.sh",
+            "commands":[os.path.join(PARSERS_DIR, "test_Bash_JSON/JSON.sh")],
+            "use_stdin":True
+        },
+   "Java BFO v1":
+       {
+           "url":"https://github.com/faceless2/json",
+           "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_java_bfo/TestJSONParsing.jar")]
+       },
+   "Go 1.7.1":
+       {
+           "url":"",
+           "commands":[os.path.join(PARSERS_DIR, "test_go/test_json")]
+       },
    "C cJSON 1.7.3":
        {
            "url":"https://github.com/DaveGamble/cJSON",

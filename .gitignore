@@ -2,3 +2,5 @@ results/logs.txt
 results/*.html
 results/*.png
 **/bin/
+test_json
+*.class
